@@ -1,0 +1,201 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.container{
+   height:100vh;
+   width: 32em;
+   position: absolute;
+   transform: translateX(-50%);
+   left: 50%;
+}
+
+.tea{
+  position: absolute;
+  background-color:honeydew;
+  height: 19em;
+  width: 19em;
+  border-radius: 1.25em 1.25em 8.27em 8.27em;
+  bottom: 6.25em;
+  left:28.5em;  
+
+}
+
+.tea::before{
+  position: absolute;
+  content: "";
+  height: 6.25em;
+  width: 6.25em;
+  border: 1.56em solid honeydew;
+  right:-6.25em;
+  bottom:7.5em;
+  border-radius: 50%;
+
+}
+
+.box{
+  position:absolute;
+  content: "";
+  height: 1.87em;
+  width:3.75em;
+  background-color: transparent;
+  border: 0.62em solid #262048;
+  border-radius: 3.75em 3.75em 0 0;
+  border-bottom: none;
+   top:17em;
+}
+.box1{
+  left: 31em;
+  animation: open-box1 8s infinite;
+}
+@keyframes open-box1{ 
+  30%{
+    height: 1.87em;
+    width:3.75em;
+    background-color: transparent;
+    border: 0.62em solid #262048;
+    border-radius: 3.75em 3.75em 0 0;
+    border-bottom: none;
+    
+  }
+  35%{
+    height: 1.87em;
+    width:3.75em;
+    background-color: #272048;
+    border:none;
+    border-radius:50%; 
+    
+}
+100%{
+  height: 1.87em;
+    width:3.75em;
+    background-color: #272048;
+    border:none;
+    border-radius:50%; 
+}
+ }
+
+.box2{
+  left: 40.50em;
+  animation: open-box2 8s infinite;
+}
+@keyframes open-box2{ 
+  30%{
+    height: 1.87em;
+    width:3.75em;
+    background-color: transparent;
+    border: 0.62em solid #262048;
+    border-radius: 3.75em 3.75em 0 0;
+    border-bottom: none;
+  }
+  35%{
+    height: 1.87em;
+    width:3.75em;
+    background-color: #272048;
+    border:none;
+    border-radius:50%; 
+    
+}
+100%{
+  height: 1.87em;
+    width:3.75em;
+    background-color: #272048;
+    border:none;
+    border-radius:50%; 
+    
+}
+ }
+
+.mouth{
+  position: absolute;
+  background-color: #f26464;
+  height:4.68em;
+  width:9.373em;
+  border-radius: 1.25em 1.25em 9.36em 9.36em;
+  bottom: 10em;
+  left:33.07em;
+  overflow: hidden;
+}
+
+.mouth::before{
+  content: "";
+  position: absolute;
+  height: 8.90em;
+  width:8.75em;
+  background-color: #c24c4c;
+  border-radius: 50%;
+   top:1.67em; 
+}
+
+.saucer{
+  height: 2.05em;
+  width: 22em;
+  background-color:honeydew;
+  position: absolute;
+  bottom: 5em;
+  left: 26.50em;
+  border-radius: 25%;
+  background-color:dimgray;
+
+}
+
+.saucer::before{
+  position: absolute;
+  content: "";
+  height: 1.60em;
+  width: 16.87em;
+  top:1.20em;
+  background-color:dimgray;
+  border-radius: 25%;
+  left:2.5em;
+  
+}
+
+.bag{
+  position: absolute;
+  background-color:dimgray;
+  height:5.62em;
+  width: 5.62em;
+  top:5em;
+  left:35em;
+}
+
+.bag::before{
+position: absolute;
+content: "";
+height: 9em;
+width: 6.2em;
+background-color: rgba(230,237,239,0.3);
+clip-path: polygon(0% 100%,0% 25%,25% 0%,75% 0%,100% 25%,100% 100%);
+background-image: radial-gradient(rgba(255,255,255,0.5) 0.18em,transparent 0.18em);
+background-size: 1.25em 1.25em;
+left:-0.26em;
+bottom: -1.16em;
+}
+
+.bag::after{
+  position: absolute;
+  content: "";
+  height: 0.90em;
+  width:3.5em;
+  background-color: #f1bb34;
+  border-radius: 0.62em;
+  left:0.93em;
+  bottom: 6.5em;
+}
+
+.string{
+  position: absolute;
+  height: 28.25em;
+  width: 0.30em;
+  background-color: #272048;
+  bottom: 8.12em;
+  left:37.50em;
+  top: -24.50em;
+}
